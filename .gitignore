@@ -217,9 +217,26 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# ESP-IDF & CMake build artifacts
-build/
-managed_components/
-sdkconfig
-sdkconfig.old
+# Python & Ambientes Virtuais
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+
+# ESP-IDF & CMake (Firmware C)
+firmware/build/
+firmware/managed_components/
+firmware/sdkconfig
+firmware/sdkconfig.old
+firmware/dependencies.lock
+
+# Ambientes de IDE
 .vscode/
+.idea/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
